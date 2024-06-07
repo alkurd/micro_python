@@ -1,0 +1,84 @@
+Game Engine Basics:
+1.
+	🟦 [✅] Create a game window or canvas.
+		Screen is 900 x 950	Grid van 25
+		dat word 36 x 38
+		
+
+	🟦 [✅] Implement a basic game loop with update and render functions.
+	🟦 [✅] Handle user input, including keyboard controls.
+		Met de pijltjes toetsen.
+
+Game Elements:
+2. 
+    	🟩 [ ] Create the Pac-Man character.
+		
+		
+    	🟩 [ ] Design and create ghost enemies.
+    	🟩 [ ] Implement pellets and power pellets.
+    	🟩 [ ] Develop the maze layout.
+    	🟩 [ ] Implement a score tracking system.
+
+Game Mechanics:
+3. 
+    	🟧 [ ] Implement Pac-Man movement, including wrap-around at screen edges.
+    	🟧 [ ] Design and implement ghost AI and movement patterns.
+    	🟧 [ ] Create pellet collection and power-up mechanics.
+    	🟧 [ ] Set up collision detection between Pac-Man, ghosts, and pellets.
+    	🟧 [ ] Create and implement a scoring system.
+
+User Interface (UI):
+4. 
+    	🟪 [ ] Create a main menu.
+    	🟪 [ ] Design and display the score during gameplay.
+    	🟪 [ ] Implement game over and win condition screens.
+
+Graphics and Animations:
+5. 
+    	🟦 [ ] Design and create sprites for characters and objects.
+    	🟦 [ ] Implement animations for character movement and interaction.
+
+Sound and Music:
+6. 
+    	🟩 [ ] Add background music.
+    	🟩 [ ] Implement sound effects for actions, e.g., eating pellets, getting caught.
+
+Level Design:
+7.
+    	🟧 [ ] Create additional maze layouts if planning multiple levels.
+    	🟧 [ ] Increase game difficulty as levels progress.
+
+Testing and Debugging:
+8.
+    🟯	🟪 [ ] Test the game thoroughly, looking for bugs and issues.
+    🟯	🟪 [ ] Address any performance or gameplay problems.
+    🟯	🟪 [ ] Balance game difficulty.
+
+Optimization:
+9. 
+    🟬	🟦 [ ] Optimize code and assets for performance.
+    🟬	🟦 [ ] Ensure the game runs smoothly on target platforms.
+
+Polish:
+10. 🟭
+    	🟩 [ ] Refine graphics, animations, and user interface elements.
+    	🟩🟭 [ ] Add any additional features or improvements.
+
+Documentation:
+11. 
+    	🟧 [ ] Create a user manual or in-game tutorial.
+    	🟧 [ ] Prepare release notes or documentation for distribution.
+
+Platform Specifics:
+12. 
+    	🟪 [ ] If releasing on specific platforms (e.g., mobile), adapt the game accordingly.
+
+Publishing:
+13. 
+    	🟪 [ ] Prepare the game for distribution on chosen platforms (e.g., app stores, web portals).
+    	🟪 [ ] Set up a marketing plan if necessary.
+
+Community and Support:
+14. 
+    	🟦 [ ] Engage with players and gather feedback.
+    	🟦 [ ] Provide updates and support as needed.

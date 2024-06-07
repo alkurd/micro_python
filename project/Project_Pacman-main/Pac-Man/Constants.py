@@ -1,0 +1,53 @@
+
+# The width and height of each tile is 16 pixels.
+TILEWIDTH = 16
+TILEHEIGHT = 16
+
+# Our screen then is 28 tiles wide and 36 tiles high.
+NROWS = 36
+NCOLS = 28
+SCREENWIDTH = NCOLS*TILEWIDTH
+SCREENHEIGHT = NROWS*TILEHEIGHT
+SCREENSIZE = (SCREENWIDTH, SCREENHEIGHT)
+
+# Defined Colors
+BLACK = (0, 0, 0)
+YELLOW = (255, 255, 0)
+WHITE = (255, 255, 255)
+RED = (255, 0, 0)
+PINK = (255,100,150)
+TEAL = (100,255,255)
+ORANGE = (230,190,40)
+GREEN = (0, 255, 0)
+
+# Controls
+STOP = 0
+UP = 1
+DOWN = -1
+LEFT = 2
+RIGHT = -2
+
+# Sprites
+PACMAN = 0
+PELLET = 1
+POWERPELLET = 2
+PORTAL = 3
+GHOST = 4
+BLINKY = 5
+PINKY = 6
+INKY = 7
+CLYDE = 8
+FRUIT = 9
+
+# Ghost Modes
+SCATTER = 0
+CHASE = 1
+FREIGHT = 2
+SPAWN = 3
+
+# Text
+SCORETXT = 0
+LEVELTXT = 1
+READYTXT = 2
+PAUSETXT = 3
+GAMEOVERTXT = 4

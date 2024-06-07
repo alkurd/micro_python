@@ -1,33 +1,42 @@
 import neopixel
 import machine
-import time
 
-# Configure the NeoPixel LED strip
-NUM_LEDS = 8  # Number of NeoPixels
-PIN = 0       # GPIO pin connected to the NeoPixels
-np = neopixel.NeoPixel(machine.Pin(PIN), NUM_LEDS)
+PIN = 28  
+HEIGHT = 16
+WIDTH = 16
 
-# Define colors
-RED = (255, 0, 0)
-GREEN = (0, 255, 0)
-BLUE = (0, 0, 255)
+def mazestyle():
+    maze = [
+        [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],  # 1
+        [0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1],  # 2
+        [0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],  # 3
+        [0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],  # 4
+        [0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],  # 5
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],  # 6
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],  # 7
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],  # 8
+        [0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0],  # 9
+        [1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1],  # 10
+        [1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1],  # 11
+        [1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1],  # 12
+        [1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1],  # 13
+        [1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1],  # 14
+        [1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1],  # 15
+        [1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1],  # 16
+    ]
 
-# Main loop
-while True:
-    # Turn on all pixels to red
-    for i in range(NUM_LEDS):
-        np[i] = RED
+    np = neopixel.NeoPixel(machine.Pin(PIN), HEIGHT * WIDTH)
+    
+    for y in range(HEIGHT):
+        for x in range(WIDTH):
+            if maze[y][x] == 0:
+                color = (0, 0, 0)  # Zwart voor uitgeschakelde pixels
+            else:
+                color = (1, 1, 1)  # Wit voor ingeschakelde pixels
+            
+            np[y * WIDTH + x] = color
+
     np.write()
-    time.sleep(1)
 
-    # Turn on all pixels to green
-    for i in range(NUM_LEDS):
-        np[i] = GREEN
-    np.write()
-    time.sleep(1)
+mazestyle()
 
-    # Turn on all pixels to blue
-    for i in range(NUM_LEDS):
-        np[i] = BLUE
-    np.write()
-    time.sleep(1)

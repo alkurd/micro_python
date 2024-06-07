@@ -117,7 +117,3 @@ while True:
             snake_positions.append((objectX, objectY))
 
         positions = [(objectX, objectY, COLOUR_RED)] + [(x, y, colour) for x, y in snake_positions]
-    
-    game.drawGame(positions)
-    # for x, y, color in positions:
-        # testsubjects.showNeoPixel(x, y, color)
